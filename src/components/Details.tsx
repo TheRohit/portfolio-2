@@ -15,7 +15,7 @@ const Details: FC<DetailsProps> = ({}) => {
         <span className="highlight">project</span>?
       </p>
       <p className="md:text-lg 2xl:text-2xl text-brand-tint">
-      I&apos;m a 2023 Engineering Grad, My preferred work is {" "}<span className="highlight">fullstack development</span>.I&apos;m using the best tool for the job, be it a reliable framework or the latest web features.
+      I&apos;m a 2023 Engineering Grad, My preferred work is {" "}<span className="highlight">fullstack development</span>. I&apos;m using the best tool for the job, be it a reliable framework or the latest web features.
       </p>
       <p className="max-w-2xl md:text-lg 2xl:max-w-5xl 2xl:text-2xl text-brand-tint">
           Neither impressive interfaces nor blazing performance are the solution, but the{' '}
