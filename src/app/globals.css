@@ -26,4 +26,86 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+  /* Remove Safari input shadow on mobile */
+  input[type='text'],
+  input[type='email'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  h1 {
+    @apply mt-0 text-3xl font-extrabold text-gray-900 md:text-5xl dark:text-gray-100 xl:text-7xl 2xl:leading-none 2xl:text-7xl;
+    margin-bottom: 0.875em;
+  }
+
+  h2 {
+    @apply text-3xl font-bold text-gray-900 dark:text-brand-tint xl:text-4xl 2xl:text-7xl 2xl:leading-none;
+    margin-top: 1.6em;
+    margin-bottom: 0.75em;
+  }
+
+  h3,
+  h4 {
+    @apply my-2 font-semibold;
+    margin-top: 1.55em;
+    margin-bottom: 0.6em;
+  }
+
+  h3 {
+    @apply text-lg md:text-xl 2xl:text-4xl 2xl:leading-tight;
+  }
+
+  h4 {
+    @apply leading-5 md:leading-normal;
+  }
+
+  :is(h2, h3, h4) {
+    scroll-margin-top: 3rem;
+  }
+
+  p {
+    @apply my-4 md:my-5 2xl:my-8 max-w-prose;
+  }
+
+  :is(h2, h3, h4) + * {
+    @apply mt-0;
+  }
+
+  a {
+    @apply relative font-bold no-underline text-brand hover:text-brand dark:text-brand-accent;
+  }
+
+  a::after {
+    @apply absolute left-0 w-full h-1 transition-transform duration-500 origin-right scale-x-0 bg-current -bottom-2;
+    content: '';
+  }
+
+  :is(a:hover, a:focus)::after {
+    @apply origin-left scale-x-100;
+  }
+
+@layer components{
+  .hSection {
+    @apply relative w-full px-4 mx-auto overflow-hidden;
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 1000px;
+  }
+
+  @screen md {
+    .hSection {
+      @apply max-w-3xl px-6;
+    }
+  }
+
+  @screen 2xl {
+    .hSection {
+      @apply max-w-6xl;
+    }
+  }
+  .cta {
+    @apply px-4 py-2 mb-2 border-2 border-current text-brand dark:text-brand-accent hover:text-brand dark:hover:text-brand-accent;
+  }
+
+}
  
