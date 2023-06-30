@@ -11,7 +11,9 @@ const Tags: FC<TagsProps> = ({size,tags,className}) => {
   {
     //@ts-ignore
     tags.map((s: string) => (
+      
       <span
+      key={s}
         className={`whitespace-nowrap px-4 py-2 font-semibold ${className} ${
           size === 'lg' ? 'rounded-2xl text-xs' : 'rounded text-sm'
         }`}
