@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Svgpro from "./images/projext-text-white.svg";
 import Image from "next/image";
-import { ExternalLink, Github, GithubIcon } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 interface ProjectsProps {}
 
 const Projects: FC<ProjectsProps> = ({}) => {
