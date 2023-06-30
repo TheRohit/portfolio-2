@@ -6,7 +6,7 @@ interface AvatarProps {
 }
 
 const Avatar: FC<AvatarProps> = ({}) => {
-  return <div className=' flex flex-col mt-28 gap-4'>
+  return <div className=' flex flex-col mt-10 gap-4'>
     <Image src={profilePic} alt='profilepic' className='rounded-full'/> 
     
 

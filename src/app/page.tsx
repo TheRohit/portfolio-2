@@ -33,6 +33,11 @@ export default function Home() {
       <Contact/>
 
       </section>
+      <footer className="mx-auto max-w-prose border-t-2 border-brand-accent px-6 py-14 2xl:max-w-7xl">
+      Designed &amp; built by <span className="font-bold text-brand-accent">Rohit</span> 
+      
+    </footer>
     </main>
+    
   );
 }
