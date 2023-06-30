@@ -80,7 +80,9 @@ body {
     @apply absolute left-0 w-full h-1 transition-transform duration-500 origin-right scale-x-0 bg-current -bottom-2;
     content: '';
   }
-
+  .highlight {
+    @apply border-b-2 border-brand-accent;
+  }
   :is(a:hover, a:focus)::after {
     @apply origin-left scale-x-100;
   }

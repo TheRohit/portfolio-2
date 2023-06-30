@@ -1,4 +1,5 @@
 import Avatar from "@/components/Avatar";
+import Contact from "@/components/Contact";
 import Details from "@/components/Details";
 import Name from "@/components/Name";
 import Projects from "@/components/Projects";
@@ -19,9 +20,17 @@ export default function Home() {
       </section>
       <section id="section-tech" className="hSection bg-brand-accent pb-24 pt-12 font-bold text-gray-800">
       <TechStack/>
+      <SectionDivider color="text-brand" />
       </section>
-      <section id="section-experience" className="hSection bg-brand pb-24 text-gray-100">
+      <section id="section-project" className="hSection bg-brand pb-24 text-gray-100">
+        
       <Projects/>
+      <SectionDivider color="text-white dark:text-black" />
+      </section>
+     
+      <section className="hSection mb-24" >
+      
+      <Contact/>
 
       </section>
     </main>
