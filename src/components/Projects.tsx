@@ -33,7 +33,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
                   <Github />
                   Github
                 </button></a>
-                <a href="https://breadit.rohitm.me/" target="_blank">
+                <a href="https://breadit.rohitm.dev/" target="_blank">
                 <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow flex gap-1 justify-center">
                   {" "}
                   <ExternalLink />
@@ -62,7 +62,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
                 </button>
                 </a>
                 
-                <a href="https://evm.rohitm.me/" target="_blank">
+                <a href="https://heartbeat.rohitm.dev/" target="_blank">
                 <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow flex gap-1 justify-center ">
                   {" "}
                   <ExternalLink />
